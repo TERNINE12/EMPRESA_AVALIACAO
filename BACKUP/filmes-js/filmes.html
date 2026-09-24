@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Cadastro de filmes</title>
+</head>
+<body class="bg-slate-300">
+    <header class="bg-slate-800 text-white p-4 flex h-20 justify-between items-center">
+        <h1 class="text-2xl font-bold">Cadastro de filmes</h1>
+        <a>Sobre</a>
+    </header>
+    <div class="m-auto bg-slate-100 h-max max-w-xl p-10 rounded-lg shadow-lg mt-10 flex flex-col">
+        <h1 class="text-3xl font-bold mb-6">Adicione um novo filme</h1>
+        <label for="nome" class="block mb-2 text-lg font-semibold">
+            Nome do filme
+            <input
+                type="text"
+                name="name"
+                placeholder="Digite o nome do filme..."
+                class="w-full border rounded-lg p-3"
+                >
+        </label>
+        <label for="sinopse" class="block mb-2 text-lg font-semibold">
+            Sinopse
+            <textarea
+                name="sinopse"
+                placeholder="Digite a sinopse do filme..."
+                class="w-full border rounded-lg p-3"
+                >
+            </textarea>
+        </label>
+        <label for="data" class="block mb-2 text-lg font-semibold">
+            Data de lançamento
+            <input
+                type="date"
+                name="data"
+                class="w-full border rounded-lg p-3"
+                >
+        </label>
+        <label for="poster" class="block mb-2 text-lg font-semibold">
+            Poster
+            <input
+                type="file"
+                name="poster"
+                class="w-full border rounded-lg p-3"
+                >
+        </label>
+
+        <button id="Cadastro" class="bg-blue-500 text-white font-bold mt-3 px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors justify-end ">
+            Cadastrar
+        </button>
+
+          <div id="lista-filmes" class="max-w-xl mx-auto mt-6 flex flex-col gap-4"></div>
+          
+    </div>
+   <script src="./filmes.js"></script>
+</body>
+</html>
